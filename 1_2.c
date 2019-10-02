@@ -5,13 +5,13 @@
 int main(void){
     int N;
     scanf("%d", &N);
-    double ans;
+    unsigned long long ans;
     ans = 1;
 
-    for (long long int i = 1; i <= N; i++){
+    for (int i = 1; i <= N; i++){
         ans *= i;
     }
-    printf("%0f\n", ans);
+    printf("%lld\n", ans);
 
     return 0;
 }
