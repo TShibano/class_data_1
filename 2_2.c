@@ -20,10 +20,10 @@ int main(void){
     // 読み込み
     int cnt = 0;    // while内のカウント用
     while(fscanf(fp, "%d,%lf,%lf,%lf", &t, &x, &y, &z) != EOF){
-        data[i][0] = t;
-        data[i][1] = x;
-        data[i][2] = y;
-        data[i][3] = z;
+        data[cnt][0] = t;
+        data[cnt][1] = x;
+        data[cnt][2] = y;
+        data[cnt][3] = z;
         
         cnt++;
     }
