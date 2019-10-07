@@ -6,7 +6,13 @@ int main(void){
     double x, y, z;
     double data[100][4];    // 時刻tがdouble型になってしまう
     // file open
+
+    /* 
+    file = "C:-----¥¥1_7.txt";
+    パスをしっかり書く
+    */
     fp = fopen("1_7.txt", "rt");
+    // fp = fopen(file, "rt");
     if (fp == NULL){
         // printf("Cannot open file.\n");
         return 0;

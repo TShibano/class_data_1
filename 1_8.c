@@ -4,6 +4,7 @@ int main(void){
     FILE *fp;
     int t;
     double x, y, z;
+    // パスを考える
     fp = fopen("1_7.txt", "rt");
     if (fp == NULL){
         // printf("Cannot open file.\n");

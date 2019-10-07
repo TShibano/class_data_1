@@ -6,6 +6,7 @@ int main(void){
     FILE *fp;
     int t;
     double x, y, z;
+    // W: fileのパスを気をつける
     fp = fopen("1_7.txt", "rt");
     if (fp == NULL){
         // printf("Cannot open file.\n");
@@ -18,6 +19,10 @@ int main(void){
     // while文の中でデータを読み込み計算する
     
     double Sxx, Sxy, Sx, Sy;    // 合計を求める
+    Sxx = 0;
+    Sxy = 0;
+    Sx = 0;
+    Sy = 0;
     /* 
     x-z用
     double Sxx, Sxz, Sx, Sz;

@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
+#define _USE_MATH_DEFINES
 
 int main(void){
     int a = 2;
@@ -18,7 +19,7 @@ int main(void){
 
     double d = 7;
     double e = 3;
-    printf("7/3の剰余 =  %lf\n", fmod(d, e));
+    printf("7/3の剰余 =  %lf\n", int(fmod(d, e)));
 
     srand((unsigned int) time(NULL));   // 現在時刻をもとにseedを生成
     for (int i = 0; i < 10; i++){

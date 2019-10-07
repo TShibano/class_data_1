@@ -1,3 +1,5 @@
+// Windowsだと文字化けした
+
 #include <stdio.h>
 
 // 構造体型struct kaikeiの宣言
@@ -15,7 +17,9 @@ int main(void){
     
     // ファイルの読み込み
     FILE *fp;
+    // パスをしっかり書く
     fp = fopen("shushi.dat", "r+");
+    
     if(fp == NULL){
         // printf("Cannot open dile.\n");
         return 0;
