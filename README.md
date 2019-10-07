@@ -8,3 +8,5 @@ Visual Studioでは警告が出るので
 Visual StudioにおいてM_PIはそのままだと使えないので  
 #define _USE_MATH_DEFINES  
 で使えるようにする
+Visual Studioではファイル操作をする際にはパスをきちんと表記する  
+
