@@ -4,4 +4,7 @@
 ## 2019/10/7
 Visual Studioでは警告が出るので  
 #define _CRT_SECURE_NO_WARNINGS  
-で警告をけす　
+で警告をけす
+Visual StudioにおいてM_PIはそのままだと使えないので  
+#define _USE_MATH_DEFINES  
+で使えるようにする
