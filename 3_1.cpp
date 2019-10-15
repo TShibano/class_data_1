@@ -59,7 +59,7 @@ Complex Complex::operator / (Complex x){
 
 
 int main(void){
-	Complex A(5.0, 10.0), B(3.0, 4.0);
+    Complex A(5.0, 10.0), B(3.0, 4.0);
     Complex C(0.0, 0.0), D(0.0, 0.0), E(0.0, 0.0), F(0.0, 0.0), G(0.0, 0.0);
     Complex H(3.0); // 実数部のみ
 	

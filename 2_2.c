@@ -2,9 +2,16 @@
 
 int main(void){
     FILE *fp;
+
+    typedef struct 
+    {
+        int t;
+        double x, y, z;
+    }DATA;
+    
     int t;
     double x, y, z;
-    double data[100][4];    // 時刻tがdouble型になってしまう
+    DATA data[100];
     // file open
 
     /* 
@@ -26,22 +33,21 @@ int main(void){
     // 読み込み
     int cnt = 0;    // while内のカウント用
     while(fscanf(fp, "%d,%lf,%lf,%lf", &t, &x, &y, &z) != EOF){
-        data[cnt][0] = t;
-        data[cnt][1] = x;
-        data[cnt][2] = y;
-        data[cnt][3] = z;
+        data[cnt].t = t;
+        data[cnt].x = x;
+        data[cnt].y = y;
+        data[cnt].z = z;
         
         cnt++;
     }
     
     fclose(fp);
-    
-    /*
-    デバッグ
-    printf("%lf\n", data[0][0]);
-    printf("%lf\n", data[50][3]);
-    printf("%lf\n", data[99][3]);
-    */
+    printf("t,x,y,z\n");
+    // デバッグ
+    for(int i = 0; i <100; i++){
+        printf("%d,%lf,%lf,%lf\n", data[i].t, data[i].x, data[i].y, data[i].z);
+    }
+
     return 0;
 
 }
