@@ -4,7 +4,7 @@ class Complex{
 private:
 	double real;	// 実数部
 	double image;	// 虚数部
-public:
+protected:
     // Constructor
     Complex();
 	Complex(double r, double i);
@@ -15,7 +15,7 @@ public:
 	Complex operator / (Complex x);
 };
 
-Complex::Complex(double r, double i = 0.0){   // コンストラクタ
+Complex::Complex(double r, double i = 0.0){   
     real = r;
 	image = i;
 }
